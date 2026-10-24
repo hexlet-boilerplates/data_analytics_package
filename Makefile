@@ -9,6 +9,9 @@ lint:
 	ruff check
 	ruff format --check
 	ty check
+	rumdl check .
+	typos
+	jactionlint
 
 lint-fix:
 	ruff check --fix
