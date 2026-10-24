@@ -1,5 +1,6 @@
 install:
 	uv sync
+	mise exec -- hk install --mise
 
 run:
 	uv run jupyter execute project.ipynb

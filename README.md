@@ -11,6 +11,8 @@ mise install
 make install
 ```
 
+`make install` also installs the git hook: `hk` runs the checks before a commit.
+
 Lint (ruff for the notebook, ty for type checking):
 
 ```bash
