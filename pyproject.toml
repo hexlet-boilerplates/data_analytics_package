@@ -10,3 +10,12 @@ dependencies = [
     "pandas",
     "seaborn",
 ]
+
+[dependency-groups]
+dev = [
+    "deptry>=0.25.1",
+]
+
+[tool.deptry.per_rule_ignores]
+# jupyter это метапакет: ноутбук запускает make run (jupyter execute), импорта в коде нет
+DEP002 = ["jupyter"]
